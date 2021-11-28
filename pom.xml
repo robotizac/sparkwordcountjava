@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.andi</groupId>
+  <artifactId>spark.wordcount</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>spark-wordcount</name>
+  
+  <properties>
+  	<java.version>11</java.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+	    <groupId>org.apache.spark</groupId>
+	    <artifactId>spark-core_2.13</artifactId>
+	    <version>3.2.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+	<dependency>
+	    <groupId>org.apache.spark</groupId>
+	    <artifactId>spark-sql_2.13</artifactId>
+	    <version>3.2.0</version>
+	    <scope>provided</scope>
+	</dependency>
+  </dependencies>
+    
+    <build>
+	    <plugins>
+		  <plugin>
+	    	<groupId>org.apache.maven.plugins</groupId>
+	    	<artifactId>maven-resources-plugin</artifactId>
+		  </plugin>  
+	    </plugins>
+    </build>
+</project>
